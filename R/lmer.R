@@ -113,7 +113,7 @@ lmerModLmerTest <-
 #' m <- lmer(Reaction ~ Days + (Days | Subject), sleepstudy)
 #' class(m) # lmerModLmerTest
 #'
-lmer <- function(formula, data = NULL, REML = TRUE,
+lmerTest <- function(formula, data = NULL, REML = TRUE,
                  control = lmerControl(), start = NULL, verbose = 0L,
                  subset, weights, na.action, offset, contrasts = NULL,
                  devFunOnly = FALSE) {
